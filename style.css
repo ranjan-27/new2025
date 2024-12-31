@@ -1,0 +1,85 @@
+/* Body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #161111;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column;
+    gap: 5rem;
+    text-align: center;
+}
+
+/* Styling for the title */
+#q {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #ffcc00;
+    text-shadow: 2px 2px 5px rgba(255, 204, 0, 0.6); /* Glow effect */
+}
+
+/* Main container styling */
+.main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem; /* Decreased gap between time blocks */
+    background: linear-gradient(135deg, rgba(75, 188, 188, 0.8), rgba(44, 87, 106, 0.7));
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Add subtle shadow to make it pop */
+}
+
+/* Time block styling */
+.time {
+    text-align: center;
+    padding: 15px 30px;
+    background-color: rgba(44, 87, 106, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Time labels (Days, Hours, Minutes, Seconds) */
+.time p {
+    font-size: 2rem;
+    margin-bottom: 5px;
+    color: #ecc116;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Time values (numbers) styling */
+.time span {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #fff;
+    margin-top: 10px;
+    display: block;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Subtle shadow for legibility */
+}
+
+/* Happy New Year message styling */
+.new-year-message {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ffcc00;
+    text-align: center;
+    margin-top: 30px;
+    animation: fadeIn 2s ease-in-out; /* Fade-in animation for message */
+}
+
+/* Animation for fade-in effect */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
